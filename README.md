@@ -1,3 +1,3 @@
 # repair-design-project
-*npm install
-*npm run build
+1. npm install
+2. npm run build
