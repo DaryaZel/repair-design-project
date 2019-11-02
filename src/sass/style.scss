@@ -102,7 +102,6 @@ span{
 
     color: #ffffff;
     padding-left: 53px;
-    padding-right: 50%;
 
 h1 {
     font-size: 2.5em;
@@ -138,12 +137,8 @@ p {
         margin-right: 20px;
     }
     &:hover {
-        box-sizing: border-box;
-    width: 260px;
-    height:39px;
         background: rgba(227, 184, 115, 0);
         border:solid 2px #ffffff;
-        border-color: #ffffff;
         }
 }
 
@@ -193,6 +188,9 @@ p {
         }
         &-slider{
             margin-right: 40px;
+            & img{
+                width:100%;
+            }
         &-nav-list {
             margin-bottom:45px;            
             display: flex;
@@ -298,10 +296,10 @@ p {
     }
     .section-typesofrepair-container__item-pics{
         position: relative;
-        width: 100%;
     }
     .section-typesofrepair-container__item-pics img{
-       max-width: 500px;
+        max-width: 387px;
+        width: 100%;
     }
     
     .section-typesofrepair-container__item-pics-description{
@@ -458,7 +456,7 @@ p {
     .section-wildest-fantasies-images-wrapper1{
         position: absolute;
         top: 56px;
-        left: 552px;
+        right: 466px;
     }
     
     .section-wildest-fantasies-images-wrapper1 img:nth-child(2),.section-wildest-fantasies-images-wrapper2 img:nth-child(2){
@@ -467,8 +465,8 @@ p {
     
     .section-wildest-fantasies-images-wrapper2{
         position: absolute;
-        top: -10px;
-        left: 918px;
+        top: -11px;
+        right: 94px;
     }
     .section-wildest-fantasies-images-wrapper1 img,.section-wildest-fantasies-images-wrapper2 img{
         display: block;
@@ -850,10 +848,336 @@ p {
                     margin-top: 30px;
                     margin-bottom: 93px;
                     max-width: 870px;
+                    width: 100%;
                 }
 .footer{
     background-color: #000000;
 }
 .footer .section-header-nav {
     padding: 40px 0 23px;
+}
+@media only screen and (max-width: 1150px) {
+        .section-leave-request-container-img {
+            position: absolute;
+            left: 0;
+            max-height: 500px;
+            max-width: 536px;
+            top: 80px;
+    }
+        .section-leave-request-container-block-contacts {
+        margin-top: 110px;
+    }
+}
+@media only screen and (max-width: 1125px) {
+    .section-typesofrepair-container__item-pics-description {
+        max-width: 210px;
+    }
+    .section-typesofrepair-container__item-pics img {
+        max-width: 340px;
+    }
+    .section-typesofrepair .wrapper {
+        padding-bottom: 200px;
+    }
+    .section-steps-container-6steps img{
+        max-width: 670px;
+    }
+}
+@media only screen and (max-width: 1080px) {
+    .section-header-nav-contacts-list {
+        display: block;
+    }
+    .section-leave-request-container-block-contacts {
+        margin-top: 110px;
+        max-width: 340px;
+    }
+    .section-wildest-fantasies-images-wrapper1 img, .section-wildest-fantasies-images-wrapper2 img {
+        display: block;
+        max-width: 280px;
+    }
+    .section-wildest-fantasies-images-wrapper1 {
+        right: 390px;
+    }
+    .section-wildest-fantasies-images-wrapper2 {
+        right: 40px;
+    }
+    .section-our-team-text {
+        padding: 76px 270px 45px;
+    }
+    .section-our-team-container__item-pics img:nth-child(2) {
+        top: -15px;
+        left: -20px;
+    }
+    .section-typesofrepair .wrapper {
+        padding-bottom: 230px;
+    }
+    .section-steps-container-6steps img {
+        max-width: 590px;
+    }
+}
+@media only screen and (max-width: 970px) {
+    .section-leave-request-container-block-contacts {
+        margin-top: 110px;
+        max-width: 250px;
+    }
+    .section-leave-request-container-img {
+        max-width: 410px;
+    }
+    .section-typesofrepair .wrapper {
+        padding-bottom: 300px;
+    }
+    .section-typesofrepair-container__item-pics-description {
+        max-width: 177px;
+    }
+    .section-typesofrepair-container__item-pics-description {
+        padding: 15px 15px 16px 15px;
+    }
+    .section-typesofrepair-container__item__submit {
+        padding: 17px 24px;
+    }
+    .section-steps-container-6steps img {
+        max-width: 520px;
+    }
+    .section-header-nav {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .section-header-nav-contacts{
+        margin-top: 7px;
+    }
+    .section-header-nav-contacts-list {
+     display:flex;
+     
+    }
+    .section-our-team-container__item-pics img:nth-child(1){
+        width:100%
+    }
+    .section-steps-container-6steps {
+        padding-top: 139px;
+    }
+    .section-steps-container-6steps img {
+        max-width: 430px
+    }
+    .section-our-clients-container__item-block__submit{
+        padding: 0;        
+    }
+    .less{
+        top: 418px;
+    }
+    .middle{
+        top: 492px;
+    }
+    .more{
+        top: 628px;
+    }
+
+}
+@media only screen and (max-width: 840px) {
+    .section-our-clients-container__item-pics-description {
+        padding: 0;
+    }
+
+    .less, .middle, .more, .section-design-project .section-typesofrepair-container__item-pics-description{
+        left:0;
+    }
+
+}
+@media only screen and (max-width: 420px){
+    body{
+        max-width:420px;
+        font-size:11px
+
+    }
+    .section-header .wrapper{
+        max-width:420px;
+    }
+    .section-header-nav-block{
+        display:none
+    }
+    .section-header-nav-contacts-list input{
+        display:none
+    }
+    .section-header-nav{
+        justify-content:space-between;
+        flex-wrap:nowrap;
+        padding-right:20px;
+        padding-left:20px;
+    }
+    .section-header-nav-contacts,.section-header-nav-contacts-list__link{
+        margin:0
+    }
+    .section-header-content-wrapper{
+        padding:0 20px 0;
+    }
+    .section-header-content-wrapper-text p{
+        padding-right: 60px;
+    }
+    .section-header-content-wrapper-text-buttons{
+        display:block
+    }
+    .section-header-content-wrapper-text-buttons__button:nth-child(1){
+        margin-bottom: 25px;
+    }
+    .section-header-content-wrapper-text-buttons__button{
+        display:block;
+        width: 100%;
+        height: 50px;
+}
+.section-header-content-wrapper h1{
+    margin-top:160px
+}
+.main .wrapper{
+    max-width: 350px;
+}
+.section-complete-projects {
+        padding-top: 45px;
+}
+
+.section-complete-projects-container-description {
+    padding-left: 0px;
+}
+.section-complete-projects-container,.section-online-control-wrapper-contacts {
+    display: block;
+}
+.section-complete-projects-container-description h2, .section-complete-projects-container-description p{
+text-align: center;
+}
+.section-complete-projects-container-slider,.section-online-control-wrapper-contacts-agreement{
+    display: none;
+}
+.section-online-control .wrapper{
+    background-color: #000000;
+}
+.section-online-control{
+    background-color: #000000;
+}
+.section-online-control-wrapper-text {
+    margin: 84px 25px 0;
+    font-size: 13px;
+    color: #ffffff;
+}
+.section-online-control-wrapper-contacts__input {
+    width: 100%;
+    background: #000000;
+    border: #000000;
+    border-bottom: solid #ffffff 2px;
+    padding-bottom: 5px;
+}
+.section-online-control-wrapper-contacts__input:nth-child(2){
+    margin-bottom: 20px;
+}
+.section-online-control-wrapper-contacts__submit{
+    width: 100%;
+}
+.section-typesofrepair-container {
+    display: block;
+}
+.section-typesofrepair-container__item-pics-description{
+    padding:15px 52px 40px 35px;
+    top:225px;
+    left:0px
+}
+.section-typesofrepair-container__item-pics img{
+    margin-bottom:240px
+}
+.section-typesofrepair-container__item__submit{
+    left:0px
+}
+.section-leave-request{
+    display:none
+}
+.section-wildest-fantasies{
+    display:none
+}
+.section-wildest-fantasies-container-description h2{
+    display:inline-block
+}
+.section-typesofrepair .wrapper{
+    padding-bottom: 0;
+}
+.section-wildest-fantasies {
+    padding-bottom: 0;
+}
+.section-design-project{
+    background-color: #000000;
+}
+.section-design-project .wrapper{
+    background-color: #000000;
+    padding-bottom: 100px;
+}
+.less {
+    top: 373px;
+}
+.middle {
+    top: 448px;
+}
+.more {
+    top: 584px;
+}
+.section-steps {
+    display: none;
+}
+.section-our-team-container {
+    display: block;
+}
+.section-our-team{
+    background-color: #000000;
+}
+.section-our-team .wrapper {
+background-color: #000000;
+}
+.section-our-team-container__item-pics {
+    padding: 35px 0 0 35px;
+}
+.section-our-team-container__item-pics img{
+margin-bottom: 150px;
+}
+.section-our-team-container__item-pics-description {
+    top: 390px;
+    left: 92px;
+}
+.section-our-team-container__item-pics-description-workexperiens h3 {
+    top: 500px;
+    left: 90px;
+}
+.section-our-team-text{
+    display: none;
+}
+.section-our-clients {
+    display: none;
+}
+.section-any-question-contacts {
+    padding:0;
+}
+.section-any-question {
+    position: unset;
+    margin-left: 0px; 
+    background-color: #000000;
+}
+.section-any-question-contacts-form-main-queastion {
+    display: block;
+}
+.section-map .wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    background:#000000;
+    padding-top: 0px;
+
+}
+.section-map img{
+    margin-bottom: 0px;
+}
+.section-map h2{
+    order: 2;
+}
+.section-map-contacts{
+    order: 3;
+    padding-bottom: 20px;
+}
+.section-map {
+padding-top: 0px;
+background-color: #000000;
+}
+.footer{
+    display: none;
+}
 }
