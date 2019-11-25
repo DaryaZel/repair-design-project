@@ -6,15 +6,11 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
-    publicPath: 'dist'
-  },
-  devServer: {
-    contentBase: path.join(__dirname, 'dist'),
-    overlay: true
-  },
+    publicPath: './..'
+  },  
   plugins: [
     new MiniCssExtractPlugin({
-      filename: 'css/main.css'
+      filename: './css/main.css'
     })
   ],
   module: {
@@ -29,6 +25,14 @@ module.exports = {
           'sass-loader'
         ],
       },
+      {
+        test: /\.(png|jpe?g|gif)$/i,
+        loader: 'file-loader',
+        options: {
+          name: '[name].[ext]',
+          outputPath: '/assets'
+        }
+      }
     ],
   },
   watch: true
