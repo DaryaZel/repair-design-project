@@ -1,5 +1,5 @@
 body {
-    background:#a7dadab0;
+    background:#ffffff;
     padding:0;
     margin:0 auto;
     max-width: 1440px;
@@ -30,6 +30,9 @@ span{
     background-size:cover;
     height: 100vh;
     background: #000000;
+.wrapper{
+    background: #000000;
+    }
 &-nav {
     padding: 15px 0 23px;
     display: flex;
